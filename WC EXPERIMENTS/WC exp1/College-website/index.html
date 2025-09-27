@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AIKTC College Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("clg-pic.jpeg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #333;
+    }
+
+    header {
+      background-color: #002147;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .college-name {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.7);
+      font-size: 32px;
+      font-weight: bold;
+      color: black;
+      padding: 20px;
+      margin: 20px auto;
+      width: fit-content;
+      border-radius: 10px;
+    }
+
+    .about {
+      background-color: #f4d03f;
+      color: #002147;
+      padding: 30px;
+      text-align: center;
+      margin: 40px auto;
+      width: 60%;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 28px;
+      color: #002147;
+      margin-top: 60px;
+    }
+
+    .departments, .faculty, .contact {
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #444;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #002147;
+      color: white;
+    }
+
+    .faculty h3 {
+      margin-top: 20px;
+      color: #002147;
+    }
+
+    .contact-info {
+      font-size: 18px;
+      text-align: center;
+      line-height: 2;
+      margin-bottom: 30px;
+    }
+
+    .vision-mission {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.8);
+      border-radius: 10px;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .vision-mission h3 {
+      color: #002147;
+    }
+
+    .facilities ul {
+      list-style: disc;
+      margin-left: 40px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      padding: 10px;
+      width: 60%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #002147;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #001634;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    Welcome
+  </header>
+
+  <!-- College Name -->
+  <div class="college-name">
+    Anjuman-I-Islam's Kalsekar Technical Campus
+  </div>
+
+  <!-- About Section -->
+  <div class="about">
+    It is an outstanding technological campus where students are trained & taught by qualified teachers and trainers to attain their full potential.<br><br>
+    AIKTC provides Best of Facilities for quality education, research and practice in all the professional Programmes in Engineering & Technology, Pharmacy and Architecture, ranging from Diploma to Degree to Post Graduate courses.<br><br>
+    The Campus aims at developing students into a complete Human Resource, that meets the highest expectations of the industry and the society at large. It also develops their capabilities to face the challenges of the ever-changing technical and technological world.
+  </div>
+
+  <!-- Vision & Mission -->
+  <div class="vision-mission">
+    <h3>INSTITUTION VISION</h3>
+    <p>To be the most sought after Technical Campus that others would wish to emulate.</p>
+
+    <h3>INSTITUTION MISSION</h3>
+    <p>Creating Exuberant Technical Professionals.</p>
+  </div>
+
+  <!-- Departments Table -->
+  <section class="departments">
+    <h2>Departments</h2>
+    <table>
+      <tr>
+        <th>Department</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Electrical Engineering</td>
+        <td>Focuses on electricity, electronics and electromagnetism.</td>
+      </tr>
+      <tr>
+        <td>Civil Engineering</td>
+        <td>Design and construction of buildings and infrastructure.</td>
+      </tr>
+      <tr>
+        <td>Computer Engineering</td>
+        <td>Blend of computer science and electrical engineering.</td>
+      </tr>
+      <tr>
+        <td>CSE (Data Science)</td>
+        <td>Focus on data analysis, ML, and big data technologies.</td>
+      </tr>
+      <tr>
+        <td>CSE (AI & ML)</td>
+        <td>Specialized in artificial intelligence and machine learning.</td>
+      </tr>
+      <tr>
+        <td>Electronics & Computer Science</td>
+        <td>Mix of electronics systems and computer programming.</td>
+      </tr>
+      <tr>
+        <td>Mechanical Engineering</td>
+        <td>Design and manufacture of machines and mechanical systems.</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Facilities List -->
+  <section class="facilities departments">
+    <h2>Facilities</h2>
+    <ul>
+      <li>Well-equipped laboratories</li>
+      <li>Wi-Fi enabled campus</li>
+      <li>Digital library and reading rooms</li>
+      <li>Training & Placement Cell</li>
+      <li>Auditorium and seminar halls</li>
+      <li>Student Innovation Center</li>
+    </ul>
+  </section>
+
+  <!-- Faculty Section -->
+  <section class="faculty">
+    <h2>Faculty</h2>
+
+    <h3>Computer Science & Engineering (AI & ML)</h3>
+    <p><strong>HoD:</strong> Dr. Salim S.</p>
+
+    <h3>Electronics and Computer Science</h3>
+    <p><strong>HoD:</strong> Dr. S.</p>
+
+    <h3>Computer Science & Engineering (DS)</h3>
+    <p><strong>HoD:</strong> Dr. Tabassum M.</p>
+
+    <h3>Computer Engineering</h3>
+    <p><strong>HoD:</strong> Dr. Tabrez K.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      📍 Sector 16, Near Thana Naka, New Panvel, Navi Mumbai, Maharashtra - 410206<br>
+      📞 Phone: +91 1234567890<br>
+      ✉️ Email: info@aiktc.ac.in
+    </div>
+
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea rows="5" name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>

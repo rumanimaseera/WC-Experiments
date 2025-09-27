@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Antique Bookstore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-image: url('bookstore-bg.webp');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #3e2f1c;
+    }
+
+    h2, h3, .navbar-brand {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .card {
+      backdrop-filter: blur(4px);
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    section {
+      background-color: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(6px);
+    }
+
+    footer {
+      background-color: rgba(62, 47, 28, 0.9);
+      color: #f8f1e4;
+      border-top: 3px solid #b08968;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="#">The Antique Bookstore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#genres">Genres</a></li>
+          <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+          <li class="nav-item"><a class="nav-link" href="#authors">Authors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="text-center text-white py-5" style="background-color: rgba(42,30,15,0.75);">
+    <div class="container">
+      <h1 class="display-4">The Antique Bookstore</h1>
+      <p class="lead fst-italic">Explore classics, rare editions, and timeless treasures</p>
+    </div>
+  </section>
+
+  <!-- Book Genres -->
+  <section class="py-5" id="genres">
+    <div class="container">
+      <h2 class="text-center mb-4">Book Genres</h2>
+      <div class="row g-4">
+        <!-- Card example -->
+        <div class="col-md-4">
+          <div class="card p-3 h-100">
+            <h5>Historical Fiction</h5>
+            <p>Relive past eras through dramatic storytelling.</p>
+          </div>
+        </div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Classic Literature</h5><p>Enduring works by literary legends.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Poetry & Philosophy</h5><p>Rhymes, reflections, and revelations.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Fantasy Realms</h5><p>Explore magical lands and epic sagas.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Mythology</h5><p>Ancient stories with divine characters.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Mystery & Crime</h5><p>Detectives, secrets, and suspense.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Romance</h5><p>Love stories.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Horror</h5><p>Fear, trauma, and sagas.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Fan Fiction</h5><p>Dramatic storytelling and endless imagination.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Books -->
+  <section class="py-5" id="featured">
+    <div class="container">
+      <h2 class="text-center mb-4">Featured Books</h2>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Jane Eyre</h5><p><strong>Author:</strong> Charlotte Brontë</p><p>A gothic classic about love, resilience, and self-respect.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>The Great Gatsby</h5><p><strong>Author:</strong> F. Scott Fitzgerald</p><p>The roaring 1920s and the tragedy of idealism.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Les Misérables</h5><p><strong>Author:</strong> Victor Hugo</p><p>A grand tale of justice, love, and revolution in France.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Me Before You</h5><p><strong>Author:</strong> Jojo Moyes</p><p>A heartwrenching love story that explores life, choices, and letting go.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>The Haunting of Hill House</h5><p><strong>Author:</strong> Shirley Jackson</p><p>A chilling tale of a haunted mansion that distorts the mind and the soul.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Twilight Reimagined</h5><p><strong>Author:</strong> Stephenie Meyer</p><p>An alternate gender-swapped retelling of the iconic vampire-human love story.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authors -->
+  <section class="py-5" id="authors">
+    <div class="container">
+      <h2 class="text-center mb-4">Legendary Authors</h2>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Jane Austen</h5><p>Wit, romance, and the English countryside.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Fyodor Dostoevsky</h5><p>Dark psychology and human conflict.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Rabindranath Tagore</h5><p>Nobel laureate of literature and soul.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>George Orwell</h5><p>Visionary author of political dystopias like 1984 and Animal Farm.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Haruki Murakami</h5><p>Blends surrealism and emotion in stories of loneliness, love, and parallel worlds.</p></div></div>
+        <div class="col-md-4"><div class="card p-3 h-100"><h5>Gabriel García Márquez</h5><p>Master of magical realism, best known for One Hundred Years of Solitude.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4" id="contact">
+    <p>📚 www.antiquebookstore.com | 📧 contact@antiquebooks.com | ☎️ +91-1234567890</p>
+    <p>© 2025 The Antique Bookstore. Crafted with love for literature.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

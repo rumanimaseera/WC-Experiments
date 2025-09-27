@@ -1,0 +1,63 @@
+/* Reset default body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container box */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields and textarea */
+input,
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Input focus effect */
+input:focus,
+textarea:focus {
+  border-color: #4caf50;
+}
+
+/* Button */
+button {
+  width: 95%;
+  padding: 10px;
+  margin-top: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}

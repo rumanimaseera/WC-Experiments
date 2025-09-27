@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Antique Bookstore</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-image: url('bookstore-bg.webp'); /* Use your image */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #3e2f1c;
+      overflow-x: hidden;
+    }
+
+    header {
+      backdrop-filter: blur(8px);
+      background-color: rgba(42, 30, 15, 0.75);
+      padding: 40px 20px;
+      text-align: center;
+      color: #f7f3e9;
+      border-bottom: 4px double #d2a679;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: rgba(255, 248, 220, 0.9);
+      text-align: center;
+      padding: 15px;
+      border-bottom: 2px solid #b08968;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5e3c2b;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin: 0 20px;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #a97456;
+      transition: width .3s;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .section {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4); /* More transparent */
+  backdrop-filter: blur(6px); /* Adds soft blur behind it */
+}
+
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 40px;
+      color: #4a2f1e;
+      border-bottom: 3px solid #c19a6b;
+      padding-bottom: 10px;
+      text-align: center;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 15px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px rgba(90, 60, 40, 0.2);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4em;
+      color: #4b2e1a;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #333;
+      font-size: 0.95em;
+      line-height: 1.4em;
+    }
+
+    footer {
+      background-color: rgba(62, 47, 28, 0.9);
+      color: #f8f1e4;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95em;
+      border-top: 3px solid #b08968;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .section h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Antique Bookstore</h1>
+    <p>Explore classics, rare editions, and timeless treasures</p>
+  </header>
+
+  <nav>
+    <a href="#genres">Genres</a>
+    <a href="#featured">Featured</a>
+    <a href="#authors">Authors</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="section" id="genres">
+    <h2>Book Genres</h2>
+    <div class="card-container">
+      <div class="card"><h3>Historical Fiction</h3><p>Relive past eras through dramatic storytelling.</p></div>
+      <div class="card"><h3>Classic Literature</h3><p>Enduring works by literary legends.</p></div>
+      <div class="card"><h3>Poetry & Philosophy</h3><p>Rhymes, reflections, and revelations.</p></div>
+      <div class="card"><h3>Fantasy Realms</h3><p>Explore magical lands and epic sagas.</p></div>
+      <div class="card"><h3>Mythology</h3><p>Ancient stories with divine characters.</p></div>
+      <div class="card"><h3>Mystery & Crime</h3><p>Detectives, secrets, and suspense.</p></div>
+      <div class="card"><h3>Romance</h3><p>Love stories.</p></div>
+      <div class="card"><h3>Horror</h3><p>Fear, Trauma, and sagas.</p></div>
+      <div class="card"><h3>Fan Fiction</h3><p>Dramatic storytelling and endless imagination.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="featured">
+    <h2>Featured Books</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Jane Eyre</h3>
+        <p><strong>Author:</strong> Charlotte Brontë</p>
+        <p>A gothic classic about love, resilience, and self-respect.</p>
+      </div>
+      <div class="card">
+        <h3>The Great Gatsby</h3>
+        <p><strong>Author:</strong> F. Scott Fitzgerald</p>
+        <p>The roaring 1920s and the tragedy of idealism.</p>
+      </div>
+      <div class="card">
+        <h3>Les Misérables</h3>
+        <p><strong>Author:</strong> Victor Hugo</p>
+        <p>A grand tale of justice, love, and revolution in France.</p>
+      </div>
+      <div class="card">
+        <h3>Me Before You</h3>
+        <p><strong>Author:</strong> Jojo Moyes</p>
+        <p>A heartwrenching love story that explores life, choices, and letting go.</p>
+      </div>
+      <div class="card">
+        <h3>The Haunting of Hill House</h3>
+        <p><strong>Author:</strong> Shirley Jackson</p>
+        <p>A chilling tale of a haunted mansion that distorts the mind and the soul.</p>
+      </div>
+      <div class="card">
+        <h3>Twilight Reimagined</h3>
+        <p><strong>Author:</strong> Stephenie Meyer</p>
+        <p>An alternate gender-swapped retelling of the iconic vampire-human love story.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="authors">
+    <h2>Legendary Authors</h2>
+    <div class="card-container">
+      <div class="card"><h3>Jane Austen</h3><p>Wit, romance, and the English countryside.</p></div>
+      <div class="card"><h3>Fyodor Dostoevsky</h3><p>Dark psychology and human conflict.</p></div>
+      <div class="card"><h3>Rabindranath Tagore</h3><p>Nobel laureate of literature and soul.</p></div>
+      <div class="card"><h3>George Orwell</h3><p>Visionary author of political dystopias like 1984 and Animal Farm.</p></div>
+      <div class="card"><h3>Haruki Murakami</h3><p>Blends surrealism and emotion in stories of loneliness, love, and parallel worlds.</p></div>
+      <div class="card"><h3>Gabriel García Márquez</h3><p>Master of magical realism, best known for One Hundred Years of Solitude.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>📚 www.antiquebookstore.com | 📧 contact@antiquebooks.com | ☎️ +91-1234567890</p>
+    <p>© 2025 The Antique Bookstore. Crafted with love for literature.</p>
+  </footer>
+
+</body>
+</html>
